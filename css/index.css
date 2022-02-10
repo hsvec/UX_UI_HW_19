@@ -1,0 +1,211 @@
+body{  
+    font-family: 'Hind', 'Baskerville';
+}
+
+header{
+    display: flex;
+    flex-direction: column;
+    font-style: normal;
+}
+
+header ul{
+    list-style-type: none;
+    text-align: center;
+}
+
+header li{
+    display: inline-block;
+    font-size: 20px;
+    padding-inline: 50px;
+}
+
+.logo{
+    display: flex;
+    flex-flow: row;
+    justify-content: flex-start;
+    padding-left: 25px;
+}
+
+.logo p{
+    display: flex;
+    align-items: center;
+    padding-left: 10%;
+    justify-content: center;
+    font-size: 33px;
+}
+
+.heroImg{
+    display: flex;
+    flex-direction: row-reverse;
+    padding: 25px;
+    justify-content: space-evenly;
+}
+
+.content{
+    text-align: left;
+    font-size: 20px;
+    padding: 60px;
+}
+
+button{
+    display: flex;
+    padding: 15px;
+    background-color: #373738;
+    color: white;
+    font-size: 15px;
+    border-radius: 4px;
+    justify-content: center;
+}
+
+.mySkills h1{
+    display: flex;
+    justify-content: center;
+    margin: auto;
+}
+
+.mySkills{
+    display: flex;
+    flex-wrap: wrap;
+    padding: 25px;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.flexContainer{
+    display: flex;
+    flex-direction: row;
+}
+
+.flexChild{
+    padding: 25px;
+    margin: 15px;
+    background-color: lightgray;
+    color: black;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.myWork h1{
+    display: flex;
+    justify-content: center;
+}
+
+.workGrid{
+    display: grid;
+    padding: 10px;
+    background-color: white;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-areas: 
+        "yogaPic yogaInfo yogaInfo"
+        "usdaInfo usdaInfo usdaPic"
+        "guacPic guacInfo guacInfo"
+    ;
+}
+
+.yogaPic{
+  grid-area: yogaPic;
+}
+.yogaInfo{
+    grid-area: yogaInfo;
+    margin: auto;
+    padding: 15%;
+}
+
+.usdaPic{
+    grid-area: usdaPic;
+}
+
+.usdaInfo{
+    grid-area: usdaInfo;
+    margin: auto;
+    padding: 15%;
+}
+
+.guacPic{
+    grid-area: guacPic;
+}
+
+.guacInfo{
+    grid-area: guacInfo;
+    margin: auto;
+    padding: 15%;
+}
+
+.projects{
+    padding: 50px;
+}
+
+.projects button{
+    display: flex;
+    justify-content: center;
+    margin: auto;
+}
+
+.connect{
+    display: flex;
+    flex-flow: row;
+    justify-content: flex-start;
+}
+
+.connect h1{
+    font-family: 'Baskerville';
+    font-style: italic;
+}
+
+.connectInfo{
+    display: flex;
+    flex-direction: column;
+    justify-content: stretch;
+    padding: 100px;
+    padding-left: 200px;
+    font-size: 20px;
+}
+
+footer{
+    background-color: #E8B24B;
+    color: black;
+    padding-top: 10px;
+}
+
+footer ul{
+    list-style: none;
+    text-align: center;
+}
+
+footer li{
+    display: inline-block;
+    font-size: 20px;
+    padding-inline: 50px;
+}
+
+footer h1{
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    font-size: 15px;
+    padding-right: 10px;
+}
+
+@media only screen and (max-width: 600) {
+    .flexContainer{
+        flex-direction: column;
+    }
+    .flexChild{
+        width: 100%;
+    }
+    .workGrid{
+        display: grid;
+        padding: 10px;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+        grid-template-areas: 
+            "yogaPic"
+            "yogaInfo"
+            "usdaPic"
+            "usdaInfo"
+            "guacPic" 
+            "guacInfo"
+        ;
+    }
+}
