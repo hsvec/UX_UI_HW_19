@@ -57,13 +57,13 @@ button{
     justify-content: center;
 }
 
-.mySkills h1{
+#mySkills h1{
     display: flex;
     justify-content: center;
     margin: auto;
 }
 
-.mySkills{
+#mySkills{
     display: flex;
     flex-wrap: wrap;
     padding: 25px;
@@ -185,6 +185,11 @@ footer h1{
     align-items: flex-end;
     font-size: 15px;
     padding-right: 10px;
+}
+
+.navButton{
+    text-decoration: none;
+    color: black;
 }
 
 @media only screen and (max-width: 600) {
