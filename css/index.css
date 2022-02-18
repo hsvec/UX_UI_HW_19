@@ -34,7 +34,7 @@ header li{
     font-size: 33px;
 }
 
-.heroImg{
+#heroImg{
     display: flex;
     flex-direction: row-reverse;
     padding: 25px;
@@ -85,7 +85,7 @@ button{
     justify-content: space-around;
 }
 
-.myWork h1{
+#myWork h1{
     display: flex;
     justify-content: center;
 }
@@ -142,13 +142,13 @@ button{
     margin: auto;
 }
 
-.connect{
+#connect{
     display: flex;
     flex-flow: row;
     justify-content: flex-start;
 }
 
-.connect h1{
+#connect h1{
     font-family: 'Baskerville';
     font-style: italic;
 }
