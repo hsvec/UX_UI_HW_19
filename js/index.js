@@ -18,14 +18,41 @@ console.log("Your index.js file is loaded correctly!");
 //     )
 // })
 
+// $(document).ready(function() {
+//     var size = $(".logo").css("fontSize");
+//             $(".logo").hover(
+//                 function(){
+//                     $(this).find("p").css("fontSize", "30px");
+//                     }, 
+//                 function(){
+//                     $(this).find("p").css("fontSize", "size");
+//                 }
+//             );
+//     })
+
 $(document).ready(function() {
-    var size = $(".logo").css("fontSize");
-            $(".logo").hover(
-                function(){
-                    $(this).find("p").css("fontSize", "30px");
-                    }, 
-                function(){
-                    $(this).find("p").css("fontSize", "size");
-                }
-            );
-    })
+    $('.greeting').each(function() {
+  
+      $(this).data('original-size', $(this).css('fontSize'));
+  
+      $(this).hover(function() {
+  
+        $(this).animate({
+          fontSize: "72px"
+        }, 1000);
+  
+        $(this).siblings().each(function() {
+  
+          var originalSize = $(this).data('original-size');
+  
+          if ($(this).css('fontSize') != originalSize) {
+  
+            $(this).animate({
+              fontSize: originalSize
+            }, 500);
+          }
+        });
+  
+      });
+    });
+  });
